@@ -50,7 +50,7 @@ Copyright © 2017-2018 **[Vnnsoo](https://Vnnsoo.com)**  Released under the **MI
 
 Screenshot 📷
 ---
-![](http://www.webstack.cc/assets/images/webstack_banner_cn.png)
+![](http://www.webstack.cc/assets/images/vnnsoo.png)
 ![](http://7xnb6x.com1.z0.glb.clouddn.com/webstack-03-Introduction.png)
 ![](http://7xnb6x.com1.z0.glb.clouddn.com/webstack-04-infomation.png)
 ![](http://7xnb6x.com1.z0.glb.clouddn.com/webstack-05-production.png)
