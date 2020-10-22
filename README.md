@@ -44,13 +44,13 @@ JUST DOWNLOAD AND DO WHAT THE FUCK YOU WANT TO.
 
 License
 ---
-Copyright © 2017-2018 **[Vnnsoo](https://Vnnsoo.com)**  Released under the **MIT License**.
+Copyright © 2020-2021 **[Vnnsoo](https://Vnnsoo.com)**  Released under the **MIT License**.
 > 注：本站开源的目的是大家能够在本站的基础之上有所启发，做出更多新的东西。并不是让大家照搬所有代码。
 > 如果你使用这个开源项目，请**注明**本项目开源地址。
 
 Screenshot 📷
 ---
-![](http://www.webstack.cc/assets/images/vnnsoo.png)
+![](http://www.webstack.cc/assets/vnnsoo.png)
 ![](http://7xnb6x.com1.z0.glb.clouddn.com/webstack-03-Introduction.png)
 ![](http://7xnb6x.com1.z0.glb.clouddn.com/webstack-04-infomation.png)
 ![](http://7xnb6x.com1.z0.glb.clouddn.com/webstack-05-production.png)
