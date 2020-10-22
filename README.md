@@ -19,7 +19,7 @@ https://github.com/WebStackPage/WebStackPage.github.io
 
 项目基于bootstrap前端框架开发。
 
-![](http://www.webstack.cc/assets/images/preview.gif)
+![](http://www.vnnsoo.com/assets/images/preview.gif)
 
 这是一个开源的公益项目，你可以拿来制作自己的网址导航，也可以做与导航无关的网站。如果你有任何疑问，欢迎与我交流分享。
 
@@ -50,7 +50,7 @@ Copyright © 2020-2021 **[Vnnsoo](https://Vnnsoo.com)**  Released under the **MI
 
 Screenshot 📷
 ---
-![](http://www.webstack.cc/assets/vnnsoo.png)
+![](http://www.vnnsoo.com/assets/vnnsoo.png)
 ![](http://7xnb6x.com1.z0.glb.clouddn.com/webstack-03-Introduction.png)
 ![](http://7xnb6x.com1.z0.glb.clouddn.com/webstack-04-infomation.png)
 ![](http://7xnb6x.com1.z0.glb.clouddn.com/webstack-05-production.png)
