@@ -1,57 +1,44 @@
-# 项目来源：
-
-https://github.com/WebStackPage/WebStackPage.github.io
-
-基于原来的项目作了部分修改，后期继续优化。
-
-# 如何部署？
-
-**1-fork 这个项目到你的github 仓库；**
-
-**2-清空cname 文件内容；**
-
-**3-开启github pages 服务，预览网站**
-
----
+# System Training
 
 
-这是一个纯静态的网址导航网站。
-
-项目基于bootstrap前端框架开发。
-
-![](http://www.vnnsoo.com/assets/images/preview.gif)
-
-这是一个开源的公益项目，你可以拿来制作自己的网址导航，也可以做与导航无关的网站。如果你有任何疑问，欢迎与我交流分享。
-
-
-如果你需要一个后台系统，可以按照我的后台框架设计自行搭建。本站设计开发过程在我的博客文章有详细讲到[《webstack \| viggo》](http://blog.viggoz.com/2018/01/03/2018-01-03-webstack/)。
-
-后台静态源码：[webstack-Admin](https://github.com/WebStackPage/webstack-Admin)
-
-关于图片资源
----
-```/assets/images/logos/default.png``` 这是网站标签的默认图标
-
-```/assets/images/logos``` 这里是所有网站内的图标切图，尺寸均为120px*120px
-
-```/assets/webstack_logos.sketch``` 这是网站标签收录的所有图标设计源文件，你可以在这里[下载](https://WebStackPage.github.io/assets/webstack_logos.sketch) 。打开前请确认Sketch版本高于50.2(55047)
-
-怎么用?
----
-JUST DOWNLOAD AND DO WHAT THE FUCK YOU WANT TO.
-
-
-
-License
----
-Copyright © 2020-2021 **[Vnnsoo](https://Vnnsoo.com)**  Released under the **MIT License**.
-> 注：本站开源的目的是大家能够在本站的基础之上有所启发，做出更多新的东西。并不是让大家照搬所有代码。
-> 如果你使用这个开源项目，请**注明**本项目开源地址。
-
-Screenshot 📷
----
-![](http://www.vnnsoo.com/assets/images/vnnsoo.png)
-![](http://7xnb6x.com1.z0.glb.clouddn.com/webstack-03-Introduction.png)
-![](http://7xnb6x.com1.z0.glb.clouddn.com/webstack-04-infomation.png)
-![](http://7xnb6x.com1.z0.glb.clouddn.com/webstack-05-production.png)
-![](http://7xnb6x.com1.z0.glb.clouddn.com/webstack-06-production2.png)
+## 系统基础知识培训
+1. 系统架构
+   - a 服务器windowsServer2012R2 
+   - b 使用web服务IIS  
+   - c 数据库SQLServer2014  AlwaysOn
+   - d 邮箱服务IIS6.0/SMTP、Exchange  
+   - e 网络服务VPN
+   - f 云上环境Azure
+   - g 视频服务MediaServer
+   - h DNS服务 GoDaddy
+2. 常用操作
+   - AlwaysOn数据库定时备份任务
+   - 系统磁盘扩充
+   - 服务器定时备份及容灾恢复
+   - Azure服务器更换外网IP
+## 常见紧急问题处理办法
+1. 客户站点卡顿无法登陆站点，或接受到服务器使用率超过85%的邮件通知，及时通知公司领导
+   - 1.1 登陆192.168.3.60  192.168.3.70  192.168.3.71，逐个进行登陆查看系统状态，
+       - ① 如果是单个站点，在3.60上查看站点能否打开，检查系统日志及代码日志，查看系统状态，重启单个站点及ApplicationPool，
+       - ② 如果是多个站点异常，需要对服务器站点进行排查，记录使用率最高的站点及服务状态，重启站点及服务，检查系统日志和代码日志，排查错误
+       - ③ 若仍然无法访问，在本地使用ping域名的方式查看IP 是否正常，如IP不能显示，则需要在[www.godaddy.com](www.godaddy.com)查看DNS是否正常，若设置正常，则需要及时联系域名服务商进行状态确认.
+       - ④ 如果部分人员不能访问，其他人员可以正常访问，需排查系统代码设置和数据库设置，如无异常，需要客户确认当地网络运营商问题，更改DNS，或者更换其他运行商网络进行重试
+   - 1.2 登陆[http://monitor.schoolstreamk12.com/cacti/host.php](http://monitor.schoolstreamk12.com/cacti/host.php)查看系统监控图，查看系统最近监控状态，定位问题发生时间点，排查系统服务和代码问题
+2. 客户邮件无法接收，
+   - 2.1 及时排查SMTP、Exchange邮件服务器状态，定位服务器问题，若是3.60上服务停止，需及时启动，并查看服务运行状态
+   - 2.2 查看邮箱空间是否足够，若空间不足，需及时进行空间清理和扩充，
+   - 2.3 如果是端口异常，需及时确认端口状态，如无问题，需联系Azure客服人员确认服务状态
+   - 2.4 如果服务器正常，则需查看192.168.3.70  192.168.3.70数据库状态，确认数据库空间及状态，及时清理错误日志
+3. 客户视频无法观看，
+   - 3.1 本地测试视频状态，查看视频是否正常打开，如果正常打开，则需检查云上服务器中视频是否正常打开，若正常打开则排查客户问题，定位客户异常发生点，排查网络供应商状态
+   - 3.2 本地视频也无法打开，登录Azure[https://portal.azure.com/](https://portal.azure.com/)在Media server中查看视频状态，对视频进行重新发布，获取最新链接，沟通UE部门及时发布，尽快将更新上线
+## 日常维护
+1. 检查V-Net网络连通性
+2. 每日巡检系统日志及代码日志
+3. 检查IIS及数据库运行状态，检查ADSync，ScheduleService，EmailService是否正常运行，查看数据库备份192.168.5.10及UserData是否定时生成，看看服务器空间是否充足
+4. 检查邮件服务器SMTP、Exchange是否正常发送邮件，查看邮件服务器Log状态，检查邮件服务器空间是否充足
+5. 检查站点访问是否正常，对所有站点的DNS连通性进行测试及观察，保障站点运行正常
+6. 查看Azure服务器运行状态，对所有资源进行监控，保障云上业务正常运行，资源数量没有异常变动，查看服务器运行日志及操作记录，保障服务器运行环境安全可靠
+7. 每日巡检Media Server，查看视频状态，保障视频链接稳定可用，
+8. 每天查看Cacti监控系统[http://monitor.schoolstreamk12.com/cacti/host.php](http://monitor.schoolstreamk12.com/cacti/host.php)，查看报警设置是否正常运行，查看监控图对异常图表进行定位分析，确认异常状态及相关信息，排查错误日志，及时分析错误原因，对监控系统65.52.61.130的冗余日志及时清理，定期清理系统中的无用日志及文件，保障系统正常运行
+9. 每日巡检Media Server，查看视频存储状态，保障视频链接稳定可用
