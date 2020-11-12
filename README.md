@@ -1,9 +1,6 @@
 # System Training
 
 
-
-[TOC]
-
 ## 系统基础知识培训
 1. 系统架构
    - a 服务器windowsServer2012R2 
