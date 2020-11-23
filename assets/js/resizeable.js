@@ -17,6 +17,7 @@ jQuery.extend(public_vars, {
 });
 
 
+
 /* Main Function that will be called each time when the screen breakpoint changes */
 function resizable(breakpoint)
 {
