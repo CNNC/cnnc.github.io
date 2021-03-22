@@ -1,7 +1,6 @@
-$Name="PSTTTI"
-$SchoolName="PSTTTI school"
+'''
+PowerShell
 # Create key to SQL District-Config
-
 # Dim Config with DistrictConfig
 
 $Name=out
@@ -36,3 +35,4 @@ $encryptedString = [Convert]::ToBase64String($encryptedBytes)
 Write-Output $encryptedString
 
 Write-Output "Add a database connection string"
+'''
