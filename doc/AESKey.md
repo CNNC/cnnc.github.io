@@ -1,5 +1,4 @@
-'''
-PowerShell
+```PowerShell
 # Create key to SQL District-Config
 # Dim Config with DistrictConfig
 
@@ -35,4 +34,4 @@ $encryptedString = [Convert]::ToBase64String($encryptedBytes)
 Write-Output $encryptedString
 
 Write-Output "Add a database connection string"
-'''
+```
