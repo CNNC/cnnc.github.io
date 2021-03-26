@@ -1,12 +1,7 @@
 function DistrictKey 
 {
-
     # Create key to SQL District-Config
-
-
     # Dim Config with DistrictConfig
-
-    $Name = out
     $DBConectionString1 = "Data Source=192.168.4.62,2433;Initial Catalog="
     $DBConectionString3 = ";User ID=sa;Password=2018p@ssw0rd;MultiSubnetFailover=True;Persist Security Info=True;MultipleActiveResultSets=True;"
     $DBConectionString = $DBConectionString1 + $Name + $DBConectionString3
