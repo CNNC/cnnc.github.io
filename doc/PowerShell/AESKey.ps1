@@ -1,4 +1,4 @@
-function DistrictKey 
+function DistrictKey($Name) 
 {
     # Create key to SQL District-Config
     # Dim Config with DistrictConfig

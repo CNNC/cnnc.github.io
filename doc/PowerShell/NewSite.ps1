@@ -3,10 +3,8 @@ Import-Module .IIS.ps1
 Import-Module .sql.ps1
 Import-Module .AddDistrict.ps1
 
-$Name="PSTTTI"
-$SchoolName="PSTTTI school"
-
-RestoreSQL
-DistrictKey
-AddDistrict
-IISSite
+$Name=PPS
+RestoreSQL  $Name
+DistrictKey $Name
+AddDistrict $Name
+IISSite $Name

@@ -1,4 +1,5 @@
-function AddDistrict {
+function AddDistrict($Name,$SchoolName)
+{
     # Add link to SQLDB District-Config
 
     $Welcome = "Welcome to "

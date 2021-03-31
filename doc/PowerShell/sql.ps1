@@ -1,5 +1,6 @@
-function RestoreSQL
+function Restoredatabase($Name) 
 {
+ 
     # Restore SQL
     $Server = '"192.168.4.62,2433"'
     $UserName = 'sa'
@@ -9,15 +10,12 @@ function RestoreSQL
  
     $SqlConn.ConnectionString = "Data Source=$Server;user id=$UserName;pwd=$Password"
     $SqlConn.open()
-
     $cmd = New-Object System.Data.SqlClient.SqlCommand
-
     $cmd.connection = $SqlConn
 
     #$cmd.commandtext = "create database psDB"
     #$cmd.commandtext = "backup database Test to disk='D:/Test.bak'"
     #  RESTORE FILELISTONLY FROM DISK = '\\PRODNLB1N2\NAUserData462\SJUSD_0316.bak'  -run in sql
-
 
     $re1 = "restore database "
     $re2 = " from disk='\\PRODNLB1N2\NAUserData462\SJUSD_0316.bak' "
@@ -31,7 +29,7 @@ function RestoreSQL
     Write-Output "The database is being prepared, please wait a moment" 
 
     $cmd.commandtext = $re
-
-
     $cmd.ExecuteScalar() | Out-Null
+
+    
 }
