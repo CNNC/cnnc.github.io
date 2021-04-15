@@ -1,6 +1,7 @@
 function AddDistrict($Name,$SchoolName)
 {
     # Add link to SQLDB District-Config
+
     $Welcome = "Welcome to "
     $https = "https://"
     $httpss = "/"
@@ -9,7 +10,7 @@ function AddDistrict($Name,$SchoolName)
     $DNS = ".schoolstreamk12.com"
     $Hoster = $Name + $DNS
 
-    $INSERT1 = "INSERT INTO [dbo].[District] ([DistrictName],[Abbr],[StateID],[TimeZoneID],[DBConectionString],[Description],[RowGuid],[Enrollment],[URL],[IsVirtualDistrict],[IsPublicCN],[isAllowBindGlobal],[MixVer],[ForwardTo],[OldDistrictID]) VALUES ("
+    $INSERT1 = " INSERT INTO [dbo].[District] ([DistrictName],[Abbr],[StateID],[TimeZoneID],[DBConectionString],[Description],[RowGuid],[Enrollment],[URL],[IsVirtualDistrict],[IsPublicCN],[isAllowBindGlobal],[MixVer],[ForwardTo],[OldDistrictID]) VALUES ("
     $Do = ","
     $NUM1 = ",1,0,"
     $RowGuid = ",'10685903-109B-435C-9E13-85C6763251E4','0',"
@@ -27,6 +28,7 @@ function AddDistrict($Name,$SchoolName)
 
     $SqlConn.ConnectionString = "Data Source=$Server;user id=$UserName;pwd=$Password;Initial Catalog=$Database "
     $SqlConn.open()
+
     $cmd = New-Object System.Data.SqlClient.SqlCommand
 
     $cmd.connection = $SqlConn

@@ -91,6 +91,38 @@ $as = New-AzureRmAvailabilitySet -ResourceGroupName $rgName -Location $location 
 
 # ############## VM1 ###############
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Create a virtual machine configuration
 $vmConfig = New-AzureRmVMConfig -VMName 'myVM1' -VMSize Standard_DS2 -AvailabilitySetId $as.Id | `
   Set-AzureRmVMOperatingSystem -Windows -ComputerName 'myVM1' -Credential $cred | `
