@@ -85,7 +85,7 @@ $resourceGroup = 'TrainingVideo'
 $storageAccount = Get-AzStorageAccount -ResourceGroupName $resourceGroup -Name 'rrvideo'
 $ctx = $storageAccount.Context
 #Expense Report
-$ER = 'asset-4fd5g5d8f-56g4c2-x651f8sc1v-vsv8fd8ds1-1v68z6v1r161s'
+$ER = 'asset-4fd5g5d8f-56g4c2-'  #存储账户blob名称
 
 $con = Get-AzStorageContainer -Context $ctx -Name $ER
 
