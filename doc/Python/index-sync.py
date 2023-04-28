@@ -16,9 +16,9 @@ namespace = ""
 region = "use"
 
 #目标ctsdb信息
-ctsdb_addr = "9.31.48.116:10011"
+ctsdb_addr = ""
 ctsdb_user = "root"
-ctsdb_passwd = "monitor@tencent"
+ctsdb_passwd = ""
 
 def get_metrics():
     url = "http://%s/_metrics" % ctsdb_addr

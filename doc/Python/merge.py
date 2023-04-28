@@ -19,14 +19,14 @@ namespace = ""
 region = "use"
 
 #源ctsdb信息
-src_es_hosts = "9.12.182.73:9200"
+src_es_hosts = ""
 src_es_user = "root"
-src_es_passwd = "monitor@tencent"
+src_es_passwd = ""
 
 #目标stsdb信息
-dst_es_hosts = "9.31.48.116:10011"
+dst_es_hosts = ""
 dst_es_user = "root"
-dst_es_passwd = "monitor@tencent"
+dst_es_passwd = ""
 
 def get_metrics():
     url = "http://%s/_metrics" % dst_es_hosts
