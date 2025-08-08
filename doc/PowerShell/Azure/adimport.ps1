@@ -1,1 +1,0 @@
-Import-Csv 'C:\Tools\ADUserDataTest.csv' | ForEach-Object {New-ADUser -SamAccountName $_.SamAccountName -Surname $_.Surname -GivenName $_.GivenName -Name $_.Name -UserPrincipalName $_.UserPrincipalName -DisplayName $_.Name -Description $_.Name -Path $_.Path -AccountPassword(ConvertTo-SecureString -AsPlainText $_.AccountPassword -Force) -Enabled 1 -ChangePasswordAtLogon 1 }
