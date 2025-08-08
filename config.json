@@ -1,0 +1,14 @@
+{
+    "database": {
+        "host": "11.142.154.110",
+        "port": 3306,
+        "database_name": "9901v1pi",
+        "username": "with_tutxxymqpvytugnb",
+        "password": "xB*5KkJYIs*1NI"
+    },
+    "app": {
+        "title": "个人站点",
+        "description": "支持博客、图片展示、文件管理和留言功能的个人站点",
+        "version": "1.0.0"
+    }
+}
