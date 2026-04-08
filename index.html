@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>装修不踩坑 - 省钱装出好房子</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">🏠</span>
+                <span class="logo-text">装修不踩坑</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="菜单">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">首页</a></li>
+                <li><a href="pages/process.html" class="nav-link">装修流程</a></li>
+                <li><a href="pages/save-money.html" class="nav-link">省钱技巧</a></li>
+                <li><a href="pages/focus.html" class="nav-link">重点关注</a></li>
+                <li><a href="pages/switches.html" class="nav-link">开关插座</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero 区域 -->
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">装修不踩坑</h1>
+            <p class="hero-subtitle">省钱还能装出自己喜欢的样子</p>
+            <p class="hero-desc">一个真实装修经历的分享站，帮你避开装修路上的各种坑</p>
+            <div class="hero-actions">
+                <a href="pages/process.html" class="btn btn-primary">查看装修流程</a>
+                <a href="pages/save-money.html" class="btn btn-outline">省钱技巧</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 特色卡片 -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>为什么看这个站？</h2>
+                <p>来自一个真实装修过来人的经验总结</p>
+            </div>
+            <div class="feature-grid">
+                <a href="pages/process.html" class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>装修流程</h3>
+                    <p>从验收到入住，清晰的装修步骤和时间线，让你心里有数</p>
+                </a>
+                <a href="pages/save-money.html" class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>省钱技巧</h3>
+                    <p>哪里该花钱，哪里能省钱，用最少的预算装出最好的效果</p>
+                </a>
+                <a href="pages/focus.html" class="feature-card">
+                    <div class="feature-icon">⚠️</div>
+                    <h3>重点关注</h3>
+                    <p>每个阶段的验收标准和避坑要点，防止被坑</p>
+                </a>
+                <a href="pages/switches.html" class="feature-card">
+                    <div class="feature-icon">🔌</div>
+                    <h3>开关插座</h3>
+                    <p>全屋开关插座规划参考，避免入住后到处拉插线板</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 装修流程概览 -->
+    <section class="overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>装修流程一览</h2>
+                <p>整个装修大约 60-90 天，以下是核心阶段</p>
+            </div>
+            <div class="timeline-mini">
+                <div class="timeline-item-mini">
+                    <div class="timeline-number">1</div>
+                    <h4>前期准备</h4>
+                    <p>验收 · 设计 · 物业审批</p>
+                </div>
+                <div class="timeline-item-mini">
+                    <div class="timeline-number">2</div>
+                    <h4>主体拆改</h4>
+                    <p>拆墙 · 封窗 · 垃圾清运</p>
+                </div>
+                <div class="timeline-item-mini">
+                    <div class="timeline-number">3</div>
+                    <h4>基础工程</h4>
+                    <p>水电 · 防水 · 找平</p>
+                </div>
+                <div class="timeline-item-mini">
+                    <div class="timeline-number">4</div>
+                    <h4>硬装核心</h4>
+                    <p>瓷砖 · 吊顶 · 刷漆</p>
+                </div>
+                <div class="timeline-item-mini">
+                    <div class="timeline-number">5</div>
+                    <h4>安装阶段</h4>
+                    <p>门 · 柜 · 灯 · 电器</p>
+                </div>
+                <div class="timeline-item-mini">
+                    <div class="timeline-number">6</div>
+                    <h4>软装收尾</h4>
+                    <p>保洁 · 家具 · 通风入住</p>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 2rem;">
+                <a href="pages/process.html" class="btn btn-primary">查看详细流程</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 快速提示 -->
+    <section class="tips-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2>装修快速提示</h2>
+                <p>几个最容易踩坑的地方</p>
+            </div>
+            <div class="tips-grid">
+                <div class="tip-card tip-warning">
+                    <div class="tip-badge">避坑</div>
+                    <h4>水电走顶不走地</h4>
+                    <p>走地一旦漏水很难发现，走顶虽然费管但后期维修方便</p>
+                </div>
+                <div class="tip-card tip-warning">
+                    <div class="tip-badge">避坑</div>
+                    <h4>闭水试验必须去楼下看</h4>
+                    <p>做完防水后闭水24小时，一定要到楼下邻居家检查是否渗水</p>
+                </div>
+                <div class="tip-card tip-success">
+                    <div class="tip-badge">省钱</div>
+                    <h4>空调独立分体机</h4>
+                    <p>客厅风管机 + 卧室分体机方案，比全屋中央空调省不少</p>
+                </div>
+                <div class="tip-card tip-success">
+                    <div class="tip-badge">省钱</div>
+                    <h4>防水自己刷</h4>
+                    <p>防水材料京东买（如东方雨虹），自己刷两遍柔性+一遍刚性</p>
+                </div>
+                <div class="tip-card tip-info">
+                    <div class="tip-badge">关注</div>
+                    <h4>保存水电管线照片</h4>
+                    <p>水电完工后一定拍照留存，后期挂东西、维修都需要知道管线位置</p>
+                </div>
+                <div class="tip-card tip-info">
+                    <div class="tip-badge">关注</div>
+                    <h4>通风1-3个月再入住</h4>
+                    <p>甲醛检测达标≤0.1mg/m³后再入住，多通风比放绿植有用</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>🏠 装修不踩坑</h3>
+                    <p>一个真实装修经历的分享站，持续更新中</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="pages/process.html">装修流程</a></li>
+                        <li><a href="pages/save-money.html">省钱技巧</a></li>
+                        <li><a href="pages/focus.html">重点关注</a></li>
+                        <li><a href="pages/switches.html">开关插座</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>内容仅供参考，具体请结合自身情况 | Powered by GitHub Pages</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
